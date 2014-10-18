@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nicksite2</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+</head>
+<body class="container" >
+	<div class="page-header">
+		<div class = "row">
+			<div class = "col-md-6">
+					<a href ="http://localhost:3000/pages/home" ><img src="http://barakaex.com/images/BARAKA.jpg" width ="400px" height="100px"> </a> <br />
+          <p id ="motto">A Leader in Transportation Logistics!</p>
+			</div>
+			<div class ="col-md-6" id="contact-info">
+					<p class="glyphicon glyphicon-envelope" style="font-size:20px"> barakaexpressllc@gmail.com</p> <br />
+          <p class ="glyphicon glyphicon-earphone" style="font-size:20px"> 618-307-6064, 618-530-1103</p> <br />
+          <a href=""><img src ="http://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/256px-Facebook_icon.svg.png" height="20px" height="20px"></a> <br />
+          <img src ="http://www.setelecom.ca/blog/wp-content/uploads/2011/12/FaxFinder-www.setelecom.ca_.png" height="20px" height="20px"> Fax: 866-825-3793
+          <p style="font-size:18px">Fax: 866-825-3793 </p>	
+	    </div>	
+		</div>
+  
+</div>
+
+<nav class="navbar navbar-inverse" role="navigation">
+ 	<div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+            <li><a href="/pages/home"> Home</a></li>
+            <li><a href="http://localhost:3000/pages/about_us">About Us</a></li>
+            <li><a href="http://localhost:3000/pages/services">Products and Services</a></li>
+            <li><a href="http://localhost:3000/pages/clients">Clients</a></li>
+            <li><a href="http://localhost:3000/pages/contacts">Contact Us</a></li>
+            <li><a href="http://localhost:3000/pages/contacts">Track Your Shipment</a></li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Apply Here <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+              <!-- <li><a href="http://localhost:3000/pages/services">Products</a></li> -->
+              <li><a href="http://localhost:3000/pages/services">Independent Contractor Application</a></li>
+              <li><a href="http://localhost:3000/pages/services">Driver Application</a></li>
+              <li><a href="http://localhost:3000/pages/services">Others</a></li>
+          </ul>
+        </li>
+        <li><a href="http://localhost:3000/pages/contacts">Sign In</a></li>
+
+      </ul>
+      <!-- <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form> -->
+      
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+
+<%= yield %>
+
+<br />
+<br />
+
+<footer>
+  <p>Ajeliti Ekesa @All Rights Reserved</p>
+
+</footer>
+
+
+
+
+
+
+</body>
+
+</html>
