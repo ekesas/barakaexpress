@@ -52,3 +52,7 @@ production:
   database: nicksite2_production
   username: nicksite2
   password: <%= ENV['NICKSITE2_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
