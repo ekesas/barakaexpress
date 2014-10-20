@@ -48,8 +48,8 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  database: nicksite2_production
+   <<: *default
+  database: nicksite2-production
   username: nicksite2
   password: <%= ENV['NICKSITE2_DATABASE_PASSWORD'] %>
   adapter: postgresql
